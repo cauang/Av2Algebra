@@ -57,6 +57,7 @@ public class MainAV2 {
         System.out.println("\nMENU PRINCIPAL:");
         System.out.println("1. Definir vetor 2D");
         System.out.println("2. Definir vetor 3D");
+        System.out.println("\nOperações:");
         System.out.println("3. Transformações 2D");
         System.out.println("4. Transformações 3D");
         System.out.println("5. Sair");
