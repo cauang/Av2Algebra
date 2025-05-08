@@ -1,6 +1,7 @@
 package src;
 public class LinearTransformations {
-
+    //juliana
+    
     /* Conversões entre sistemas de coordenadas */
     private static double[] toHomogeneous2D(double[] v) {
         return new double[]{v[0], v[1], 1};
@@ -35,6 +36,7 @@ public class LinearTransformations {
             m[3][0]*v[0] + m[3][1]*v[1] + m[3][2]*v[2] + m[3][3]*v[3]
         };
     }
+    //andrey
     
     /* Transformações 2D */
     public static Vector translate2D(Vector v, double dx, double dy) {
@@ -104,7 +106,8 @@ public class LinearTransformations {
         };
         return new Vector(toCartesian2D(multiplyMatrix2D(m, homo)));
     }
-    
+
+    //cauan
     public static Vector shearing2D(Vector v, double kx, double ky) {
         double[] vec = {v.getElement(0), v.getElement(1)};
         double[] homo = toHomogeneous2D(vec);
@@ -170,6 +173,8 @@ public class LinearTransformations {
         };
         return new Vector(toCartesian3D(multiplyMatrix3D(m, homo)));
     }
+    
+    //ester
     
     public static Vector reflection3DX(Vector v) {
         double[] vec = {v.getElement(0), v.getElement(1), v.getElement(2)};
